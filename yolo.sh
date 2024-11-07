@@ -5,7 +5,7 @@ push_changes() {
     local file=$1
     git add -A
     GIT_EDITOR=: git commit -m "yolo: updated at $(date '+%H:%M:%S')"
-    git push origin $(git branch --show-current)
+    git push
 }
 
 # Function to setup and start file watching
